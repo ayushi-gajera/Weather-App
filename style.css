@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.current-active {
+    background-color: rgb(219, 226, 239, 0.5);
+    border-radius: 3px;
+}
+
+.tab-container p {
+    padding: 0.4rem;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    color: aliceblue;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+
+.tab-container {
+    min-width: 1000px;
+    display: flex;
+    font-size: 0.95rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-top: 60px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.grant-location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.grant-location-container p:first-of-type {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.grant-location-container p:last-of-type {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.grant-location-container button {
+    height: 2.5rem;
+    width: 11rem;
+    background-color: rgb(219, 226, 239, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.grant-location-container button:hover {
+    background-color: rgb(219, 226, 239, 0.6);
+}
+
+h2 {
+    margin-right: 15px;
+    font-size: 1.7rem;
+}
+
+.yourLocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.weather-details {
+    margin-top: 20px;
+}
+
+.weather-details {
+    font-size: 1.3rem;
+}
+
+.card img,
+p,
+p {
+    margin-top: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    min-width: 490px;
+}
+
+.cards div {
+    height: 9rem;
+    width: 9rem;
+    background-color: rgb(219, 226, 239, 0.5);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+}
+
+.search-container {
+    margin-top: 2.5rem;
+}
+
+.input-search {
+    all: unset;
+    height: 2.5rem;
+    width: 28rem;
+    padding-left: 0.8rem;
+    border: none;
+    background-color: rgb(219, 226, 239, 0.5);
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: 2.5px solid rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+}
+
+.searchBtn {
+    background-color: transparent;
+    border: none;
+    color: beige;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(219, 226, 239, 0.5);
+}
+
+.loading-container {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.not-found {
+    margin-top: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.not-found img {
+    height: 300px;
+    width: 300px;
+}
+
+/* To make responsive */
+@media (100px <=width <=700px) {
+
+    .wrapper {
+        height: 135vh;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .tab-container {
+        margin-top: 2rem;
+        width: 80%;
+        min-width: 200px;
+    }
+
+    .tab-container p {
+        font-size: 0.8rem;
+    }
+
+    .grant-location-container button {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .input-search {
+        width: 15rem;
+    }
+
+    .input-search::placeholder {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .not-found {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .not-found img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* Javascript */
+.display {
+    display: none;
+}
